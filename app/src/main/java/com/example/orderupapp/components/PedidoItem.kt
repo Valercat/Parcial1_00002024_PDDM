@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 
 @Composable
-fun PedidoItem(menu: Producto, onClick: () -> Unit){
+fun PedidoItem(menu: Producto, onClick: () -> Unit, contador: Map<Int, Int>){
 
     Card(
         modifier = Modifier
@@ -58,6 +58,16 @@ fun PedidoItem(menu: Producto, onClick: () -> Unit){
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(
                     text = "${menu.precio}",
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = "${contador[menu.id] ?: 0}",
+                    //de nuevo, si sista el id en la tarjetita asignada pasa a ponerle numero del
+                    //contador. Y si nosta pues 0
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     maxLines = 2,

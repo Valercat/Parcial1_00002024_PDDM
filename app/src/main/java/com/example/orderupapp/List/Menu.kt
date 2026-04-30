@@ -19,10 +19,10 @@ val menu = listOf(
 )
 
 const val pupusaImg =
-    "https://comedera.com/wp-content/uploads/sites/9/2023/05/Pupusas-de-quesoshutterstock_1803502444.jpg"
+    "https://comedera.com/wp-content/uploads/sites/9/2023/05/Pupusas-de-queso-shutterstock_1803502444.jpg"
 const val cafeImg = "https://i.blogs.es/139e0f/cafe-americano2/840_560.jpeg"
 const val chocoImg =
-    "https://cocinaconcoqui.com/wp-content/uploads/2025/12/chocolate-calientecasero-500x500.jpg"
+    "https://cocinaconcoqui.com/wp-content/uploads/2025/12/chocolate-caliente-casero-500x500.jpg"
 const val cocaImg =
-    "https://d23esi1h40dfmi.cloudfront.net/wpcontent/uploads/2025/08/01124509/00732.jpg"
+    "https://d23esi1h40dfmi.cloudfront.net/wp-content/uploads/2025/08/01124509/00732.jpg"
 
