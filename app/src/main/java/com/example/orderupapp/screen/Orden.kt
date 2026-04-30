@@ -46,7 +46,7 @@ fun Orden(navigateBack: () -> Unit, cantidad: Map<Int, Int>, onConfirm: () -> Un
                 items(orden) { producto ->
                     //si encuentra el id del producto hace eso, sino 0
                     val cant = cantidad[producto.id] ?: 0
-                        Column {
+                        Column() {
                             Text(text = producto.nombre,
                                 fontWeight = FontWeight.Bold)
                             Text(text = "Cantidad: $cant x $${producto.precio}")
